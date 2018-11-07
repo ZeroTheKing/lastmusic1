@@ -353,4 +353,8 @@ client.user.setGame(`Last Community`,"http://twitch.tv/Death Shop")
 client.user.setStatus("dnd")
 });
 
+client.on('ready', () => {
+    client.channels.get("508382674247876643").join();
+    });
+
 client.login(process.env.BOT_TOKEN);
